@@ -3,5 +3,92 @@
 }
 
 html {
-  font-size: 10px;
+  font-size: 14px;
+}
+
+body {
+  margin: 0;
+  width: 100vw;
+  min-height: 100vh;
+  background: radial-gradient(#9d6237, #984040);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  width: fit-content;
+  height: fit-content;
+  padding: 1rem;
+  background-color: white;
+  color: black;
+  box-shadow: 5px 5px 10px #202020;
+}
+
+.grid {
+  width: 100vmin;
+  height: 100vmin;
+  max-width: 600px;
+  max-height: 600px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  border: 0.5rem solid black;
+}
+
+.grid-items {
+  border: 0.1rem solid gray;
+  font-size: 2rem;
+  background-color: white;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-items:hover {
+  background-color: #ccc;
+}
+
+.prompt {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0.25rem;
+}
+
+#box3,
+#box7,
+#box10,
+#box11,
+#box12,
+#box15 {
+  border-left: 0.5rem solid black;
+}
+
+#box1,
+#box2,
+#box3,
+#box4,
+#box5,
+#box8,
+#box9,
+#box10,
+#box11 {
+  border-bottom: 0.5rem solid black;
+}
+
+.answer {
+  width: 50%;
+  height: 50%;
+  text-align: center;
+  border: none;
+  font-size: 2rem;
+  background-color: inherit;
+}
+
+@media only screen and (min-width: 998px) {
+  html {
+    font-size: 14px;
+  }
 }
